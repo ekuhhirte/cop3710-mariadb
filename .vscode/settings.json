@@ -10,9 +10,9 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
-            "name": "cop3710_MariaDB_L15",
+            "name": "cop3710_MariaDB_L17",
             "username": "root",
-            "database": "L15",
+            "database": "L17",
             "password": "rootpass"
         }
     ]
