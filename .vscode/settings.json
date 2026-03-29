@@ -12,7 +12,7 @@
             "driver": "MariaDB",
             "name": "cop3710_MariaDB_L17",
             "username": "root",
-            "database": "L17",
+            "database": "ekuhhirte_db_elite_video",
             "password": "rootpass"
         }
     ]
