@@ -10,9 +10,9 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
-            "name": "cop3710_MariaDB_L17",
+            "name": "cop3710_MariaDB_CH08",
             "username": "root",
-            "database": "ekuhhirte_db_elite_video",
+            "database": "CH08_ConstructCo",
             "password": "rootpass"
         }
     ]
