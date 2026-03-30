@@ -12,7 +12,7 @@
             "driver": "MariaDB",
             "name": "cop3710_MariaDB_CH08",
             "username": "root",
-            "database": "CH08_ConstructCo",
+            "database": "CH08_SimpleCo",
             "password": "rootpass"
         }
     ]
