@@ -13,8 +13,7 @@ try:
     user=os.getenv('DB_USER'),
     password=os.getenv('DB_PASSWORD'),
     database=os.getenv('DB_NAME'))
-except mysql.connector.Error asA err:
+except mysql.connector.Error as err:
     print(f"Error: {err}")
 else:
-    print("Connection successful!")
-    connection.close()
+    print("Connection to the database was succesful!")
