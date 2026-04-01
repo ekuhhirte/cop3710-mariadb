@@ -17,3 +17,4 @@ except mysql.connector.Error as err:
     print(f"Error: {err}")
 else:
     print("Connection to the database was succesful!")
+    connection.close()
