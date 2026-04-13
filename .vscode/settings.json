@@ -10,9 +10,9 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
-            "name": "cop3710_MariaDB_CH08",
+            "name": "cop3710_MariaDB_L17HW",
             "username": "root",
-            "database": "CH08_SimpleCo",
+            "database": "L17HW",
             "password": "rootpass"
         }
     ]
