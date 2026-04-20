@@ -10,9 +10,9 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
-            "name": "cop3710_MariaDB_L17HW",
+            "name": "cop3710_MariaDB_Final_Project",
             "username": "root",
-            "database": "L17HW",
+            "database": "tallmart_final_project",
             "password": "rootpass"
         }
     ]
