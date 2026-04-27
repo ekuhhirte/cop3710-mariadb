@@ -1593,7 +1593,7 @@ CREATE TABLE `INVOICE` (
   PRIMARY KEY (`INV_NUM`,`V_DATE`),
   KEY `CUST_ID` (`CUST_ID`),
   CONSTRAINT `1` FOREIGN KEY (`CUST_ID`) REFERENCES `CUSTOMER` (`CUST_ID`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=211 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=212 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1812,7 +1812,8 @@ INSERT INTO `INVOICE` VALUES
 (603,207,'2025-08-26','Completed'),
 (607,208,'2026-04-26','Processing'),
 (612,209,'2026-04-12','Shipping'),
-(612,210,'2014-02-13','Completed');
+(612,210,'2014-02-13','Completed'),
+(605,211,'2026-04-26','Submitted');
 /*!40000 ALTER TABLE `INVOICE` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2435,7 +2436,8 @@ INSERT INTO `LINE` VALUES
 (209,'2026-04-12',616,245,12002.55,48.99,1),
 (210,'2014-02-13',605,3,2879.97,959.99,1),
 (210,'2014-02-13',609,45,2114.55,46.99,1),
-(210,'2014-02-13',610,3,269.97,89.99,1);
+(210,'2014-02-13',610,3,269.97,89.99,1),
+(211,'2026-04-26',629,68,475.32,6.99,1);
 /*!40000 ALTER TABLE `LINE` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3132,8 +3134,9 @@ CREATE TABLE `PRODUCT` (
   `STORAGE_INSTRUCT` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`PROD_ID`,`VEND_ID`),
   KEY `VEND_ID` (`VEND_ID`),
+  KEY `price_index` (`PROD_COST`),
   CONSTRAINT `1` FOREIGN KEY (`VEND_ID`) REFERENCES `VENDOR` (`VEND_ID`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=629 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=630 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3752,7 +3755,8 @@ INSERT INTO `PRODUCT` VALUES
 (625,108,'Gallon of Skim Milk','Gallon Skim Milk','C',5.99,'Store in a refridgerated area and watch expiration date'),
 (626,108,'Half Gallon of Full Fat Milk','1/2 Gallon Full Fat Milk','C',5.99,'Store in a refridgerated area and watch expiration date'),
 (627,108,'Gallon of Full Fat Milk','Gallon Full Fat Milk','C',5.99,'Store in a refridgerated area and watch expiration date'),
-(628,108,'1 LB String Cheese','1 LB String Cheese','C',10.99,'Store in a refridgerated area');
+(628,108,'1 LB String Cheese','1 LB String Cheese','C',10.99,'Store in a refridgerated area'),
+(629,106,'Claw Hammer for Construction Sites','Claw Hammer','N',6.99,'Store away from moisture');
 /*!40000 ALTER TABLE `PRODUCT` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -4917,4 +4921,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-26 23:00:30
+-- Dump completed on 2026-04-27  1:43:53
