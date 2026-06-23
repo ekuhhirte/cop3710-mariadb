@@ -10,9 +10,9 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
-            "name": "cop3710_MariaDB_Final_Project",
+            "name": "Catapult_Connection",
             "username": "root",
-            "database": "tallmart_final_project",
+            "database": "LRH_Catapult",
             "password": "rootpass"
         }
     ]
